@@ -1,6 +1,6 @@
 <?php
 // Connect to db here. No time to do much
-
+session_start();
 $localhost = "localhost";
 $username = "root";
 $password = "";
