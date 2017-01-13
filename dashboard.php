@@ -1,4 +1,12 @@
+<?php
+require_once 'conn.php';
 
+if( !isset($_SESSION['login']) || $_SESSION['login'] !== true ) {
+	header('Location: dashboard.php');
+	exit;
+}
+
+?>
 <!DOCTYPE html>
 <head>
 	<Title>Dash Board</Title>
